@@ -45,7 +45,8 @@
     
             /* main container area beneath menu */
             main {
-                background: rgb(245, 238, 219);
+                background: rgb(17, 17, 17);
+                color:#fff;
                 display: flex;
             }
             .sidebar {
@@ -54,6 +55,8 @@
             }
             .sidebar img {
                 width: 200px;
+                display: block;
+                margin-bottom: 10px;
             }
             .content {
                 flex: 1;
@@ -61,6 +64,24 @@
             }
             .video-games header {
                 font-size: 1.25em;
+            }
+            .red{
+                color:red;
+            }
+            .green{
+                color:green;
+            }
+            .yellow{
+                color:yellow;
+            }
+            .orange{
+                color:orange;
+            }
+            .light_orange{
+                color:rgb(255, 176, 30);  
+            }
+            .blue{
+                color:rgb(0, 48, 206);
             }
         </style>
     </head>
@@ -76,35 +97,41 @@
             <main>
                 <div class="sidebar">
                      <img src="img/modern-warfare-3-logo.jpg">
+                     <img src="https://www.thesmackdownhotel.com/igallery/15001-15100/WWE_2K19_Wallpaper_Logo-15090-1080.png">
+                     <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fbrianmazique%2Ffiles%2F2018%2F07%2FM19_Cover_16x9-1200x675.jpg">
+                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Left4Dead_Windows_cover.jpg/220px-Left4Dead_Windows_cover.jpg">
+                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Left4Dead2.jpg/220px-Left4Dead2.jpg">
+                     <img src="https://steamcdn-a.akamaihd.net/steam/apps/360/header.jpg?t=1530046445">
                 </div>
                 <div class="content">
-                    <header> Dante Moley </header>
-                    <p> View All Of The Games That I've Played Throughtout My Life </p>
-                    <p> I'm going to be graduating in 2020 </h1>
+                    <header class="blue"> Dante Moley </header>
+                    <p class="blue"> Welcome To My Gaming Website! </p>
+                    <p class="green"> View All Of The Games That I've Played Throughtout My Life</h1>
+                    <p class="red"> HOPE YOU ENJOY!</p>
                     
                     <section class="video-games">
-                        <header>My Favorite Games To Play On PC</header>
+                        <header class="yellow">My Favorite Games To Play On PC</header>
                         <ul>
-                            <li>Left 4 Dead</li>
-                            <li>Left 4 Dead 2</li>
-                            <li>Half-Life:Deathmatch Source</li>
+                            <li class="green">Left 4 Dead</li>
+                            <li class="light_orange">Left 4 Dead 2</li>
+                            <li class="orange">Half-Life:Deathmatch Source</li>
                         </ul>
                         
-                        <header> My Favorite Games To Play On Console</header> 
+                        <header class="red"> My Favorite Games To Play On Console</header> 
                         <ul>
-                            <li>Call Of Duty MW3</li>
-                            <li>WWE 2k19</li>
-                            <li>Madden 19</li>
+                            <li class="green">Call Of Duty MW3</li>
+                            <li class="red">WWE 2k19</li>
+                            <li class="yellow">Madden 19</li>
                         </ul>
                         
-                        <header> The Console That I Play On Is Xbox</header>
+                        <header class="green"> The Console That I Play On Is Xbox</header>
                         <ul>
-                        <header> These Are 5 Reasons Why I Like Xbox </header>
-                            <li>1. I Like The Way That The Xbox Console Is Built</li>
-                            <li>2. I Like The Way The Console Looks</li>
-                            <li>3. I Like The Controllers Better</li>
-                            <li>4. I Like Thats It's American Built</li>
-                            <li>5. I Like </li>
+                        <header class="blue"> These Are 5 Reasons Why I Like Xbox </header>
+                            <li class="green">1. I Like The Way That The Xbox Console Is Built</li>
+                            <li class="orange">2. I Like The Way The Console Looks</li>
+                            <li class="yellow">3. I Like The Controllers</li>
+                            <li class="red">4. I Like Thats It's American Built</li>
+                            <li class="blue">5. I Feel Like Xbox Is More Advanced Than Any Other Console </li>
                         </ul>
                     
                     </section>
@@ -112,4 +139,4 @@
             
             <main>
         </div>    
-    </body>       
+    </body>
