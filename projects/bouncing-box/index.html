@@ -61,27 +61,52 @@
 			
 			function handleBoxClick() {
 				// TODO 4 / 5
-				points += 1;           // increase the point total
-				box.text(points);      // update the new points total displayed by the box
-				position = 0;         // reset the position of the box to 0
-				speed += 5;    // increase the speed of the box on every click
+				
+				increasepoint();
+				
+				if (points%5 === 0){
+			    	changeSpeed(-1);
+			    }
+				
+				changeSpeed(5);
+				
+				randomlyPositionBox();
+				
+				
 				box.css('background-color', "green");
 			};
 			//TODO 6
 			
+			function randomlyPositionBox(){
+				var randNum=Math.random()*boardWidth;
+				position = randNum;         // reset the position of the box to 0
+			}
+			
+			function increasepoint(){
+				points++; //increment points
+				box.text(points);
+			} 
+			function changeSpeed(newSpeed){
+				speed+=newSpeed;
+			}
+			
+			
+			
 			function update() {
 				
 			    position += speed*direction;    // increment position by speed on every update
-			    console.log("new position: " + position);
 			    
+			    var positionY;
+				var directionY;
+				box.css('top', positionY);
 			    if(position > boardWidth) {
 			    	direction= -1;
 			        console.log("Right Wall Hit");
 			    } else if(position<0){
 			    	direction=1;
-			    	
-			    	var randNum = Math.random() * 100;
-			    }
+			    } 
+			    
+			    
 			    
 			    box.css('left', position);      // set the 'left' CSS property of the box to the new value of position
 			}
@@ -96,3 +121,4 @@
 	</script>
 	
 </html>
+
